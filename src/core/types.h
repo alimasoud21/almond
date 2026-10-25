@@ -47,7 +47,7 @@ enum class OrderType : std::uint8_t {
     POST_ONLY, 
 };
 
-enum class OrderStatues : std::uint8_t{
+enum class OrderStatus : std::uint8_t{
     NEW,
     ACCEDPTED,
     PARTIALLY_FILLED,
@@ -89,6 +89,6 @@ static_assert(std::is_trivially_copyable_v<ParticipantId>);
 static_assert(std::is_trivially_copyable_v<MatchId>);
 static_assert(std::is_trivially_copyable_v<Side>);
 static_assert(std::is_trivially_copyable_v<OrderType>);
-static_assert(std::is_trivially_copyable_v<OrderStatues>);
+static_assert(std::is_trivially_copyable_v<OrderStatus>);
 static_assert(std::is_trivially_copyable_v<Symbol>);
 } 
